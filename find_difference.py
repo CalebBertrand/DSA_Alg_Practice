@@ -20,3 +20,7 @@ class Solution:
 
 # expect "e"
 print(Solution().findTheDifference("abcd", "abcde"))
+
+# reflection: knowing something about your input data can allow optimizations based off the
+# bounds. In this example, I knew characters would always be lowercase alphabetic, so a dense
+# array was possible based off their ascii values
