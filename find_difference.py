@@ -15,7 +15,7 @@ class Solution:
 
         # python quirk: enumerate is actually faster than doing a range() to get an index because enumerate drops down to a C level loop,
         # and indexing a python array does extra checks to ensure the index is in range.
-        # So enumerating over the whole list is actually faster than starting in the middle with a range (facepalm)
+        # So enumerating over the whole list is actually faster than starting at 97 with indexing (facepalm)
         for i, n in enumerate(counts):
             if n == -1:
                 return chr(i)
